@@ -1,15 +1,15 @@
 class StaticPagesController < ApplicationController
 
-  def home
+  def bienvenida
   end
 
-  def diagnostic
+  def relaciones_violentas
   end
 
-  def result
+  def informate
   end
 
-  def about
+  def organizaciones
   end
   
 end
