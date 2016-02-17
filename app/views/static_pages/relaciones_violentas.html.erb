@@ -1,0 +1,67 @@
+<% provide(:title, "Relaciones_violentas") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %></title>
+  </head>
+  <body>
+    <h1>Preguntas básicas para detectar relaciones violentas</h1>
+    <div class="center jumbotron">
+      <h3>Da click en el recuadro de la izquierda de la pregunta que selecciones afirmativamente</h3>
+    </div>
+
+    <div class="box_question">
+      <input type="checkbox" value="">
+      ¿En las ocasiones en las que discuten te ha alzado la voz?
+    </div>
+    <br>
+    <div class="box_question">
+      <input type="checkbox" value="">
+      ¿Alguna vez te ha dicho que no vistas de una manera en específico?
+    </div>
+    <br>
+    <div class="box_question">
+      <input type="checkbox" value="">
+      ¿Frente a sus amigos o amigas te ha dicho cosas que te han incomodado?
+    </div>
+    <br>
+    <div class="box_question">
+      <input type="checkbox" value="">
+      ¿Te ha pedido alguna vez el celular para ver tus conversaciones?
+    </div>
+    <br>
+    <div class="box_question">
+      <input type="checkbox" value="">
+      ¿En algún momento te ha dicho que dejes de ver a tus amigas o amigos?
+    </div>
+    <br>
+    <div class="box_question">
+      <input type="checkbox" value="">
+      ¿Suele decirte que haces las cosas mal?
+    </div>
+    <br>
+    <div class="box_question">
+      <input type="checkbox" value="">
+      ¿En ocasiones el “jugando” te ha dado un manotazo, pellizco o golpecito?
+    </div>
+    <br>
+    <div class="box_question">
+      <input type="checkbox" value="">
+      En lugar de llamarte por tu nombre, ¿te ha dicho, “mensita”, “tontita” etc...o alguna palabra que te haya incomodado?
+    </div>
+    <br>
+    <div class="box_question">
+      <input type="checkbox" value="">
+      ¿Alguna vez te ha dicho que no le gusta usar protección y que estaría mejor si tienen relaciones sexuales sin protección?
+    </div>
+    <br>
+    <div class="box_question">
+      <input type="checkbox" value="">
+      ¿Has tenido relaciones sexuales sin ganas solo porque tu pareja te insistió?
+    </div>
+      <br><br>
+    <div class="center jumbotron">
+      <%= link_to "Diagnóstico", '#', class: "btn btn-lg btn-success" %>
+    </div>
+  </body>
+</html>

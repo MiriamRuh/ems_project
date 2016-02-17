@@ -1,7 +1,15 @@
 class StaticPagesController < ApplicationController
-  def home
+
+  def bienvenida
   end
 
-  def help
+  def relaciones_violentas
   end
+
+  def informate
+  end
+
+  def organizaciones
+  end
+  
 end
