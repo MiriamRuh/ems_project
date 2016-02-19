@@ -1,15 +1,73 @@
 <% provide(:title, "Organizaciones") %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= yield(:title) %></title>
-  </head>
-  <body>
-    <h1>Organizaciones</h1>
-    <p>
-      This is the home page for the
-      <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </p>
-  </body>
-</html>
+
+<!-- Todas las organizacione -->
+
+<div class="container">
+  <div class="row">
+    <div class="ficha">
+      <h3>Mujeres Viviendo Diferente</h3>
+      <h4>Tel: 36 90 18 62 | Ciudad de México</h4>
+      <%= image_tag "mvd.png", class: "img_ficha" %>
+      <h5>Empoderamiento a mujeres en autoestima y oficios para fomentar una cultura equitativa.</h5>
+      <h6>Acompañamiento psicológico, asesoría, violencia de género, empoderamiento.</h6>
+    </div>
+    <div class="ficha">
+      <h3>Observatorio ciudadano en contra de la violencia, desaparición y feminicidio en el Estado de México.</h3>
+      <h4>Tel: 55 2031 9020 | Estado de México</h4>
+      <%= image_tag "ocmexfem.png", class: "img_ficha" %>
+      <h5>Acompañamiento de casos de violencia y observación en la impartición de justicia.</h5>
+      <h6>Asesoría jurídica, acompañamiento, feminicidio, defensa.</h6>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="ficha">
+      <h3>Ímpetu Centro de Estudios A.C.</h3>
+      <h4>Tel: 55 2031 9020 | Ciudad de México</h4>
+      <%= image_tag "impetu.jpg", class: "img_ficha" %>
+      <h5>Organización feminista que trabaja por los derechos de las mujeres y de las juventudes.</h5>
+      <h6>Acompañamiento, defensa, capacitación, derechos de las mujeres, promoción.</h6>
+    </div>
+    <div class="ficha">
+      <h3>Grupo de Información en Reproducción Elegida –GIRE.</h3>
+      <h4>Tel: 55 5658 6645 | Ciudad de México</h4>
+      <%= image_tag "gire.png", class: "img_ficha" %>
+      <h5>Promover y defender la salud y los derechos reproductivos en el marco de los derechos humanos.</h5>
+      <h6>Acompañamiento, defensa, asesoría jurídica, derechos de las mujeres, derechos sexuales y reproductivos, aborto, maternidad, violaciones.</h6>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="ficha">
+      <h3>T'ek'ei "Grupo interdisciplinario por la equidad"</h3>
+      <h4>Tel: 442 490 7142 | Queretaro</h4>
+      <%= image_tag "tekei.jpg", class: "img_ficha" %>
+      <h5>Grupo Interdisciplinario en Pro de los Derechos Humanos, preocupado por la problematica de las desapariciones forzadas, trata de personas y feminicidios.</h5>
+      <h6>Desapariciones forzadas, trata de personas, feminicidios.</h6>
+    </div>
+    <div class="ficha">
+      <h3>Basta para mí. Basta para todas.</h3>
+      <h4>Fb: Basta Para Todas | Guanajuato</h4>
+      <%= image_tag "bpt.jpg", class: "img_ficha" %>
+      <h5>Asesorar, contener y acompañar a mujeres inmersas en la problemática de Violencia de Género.</h5>
+      <h6>Acompañamiento, derechos de las mujeres, discriminación.</h6>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="ficha">
+      <h3>Línea Aborta Segura</h3>
+      <h4>Tel: 55 2110 2722 | Ciudad de México</h4>
+      <%= image_tag "las.png", class: "img_ficha" %>
+      <h5>Acompañamiento y asesoría para abortar de manera segura.</h5>
+      <h6>Acompañamiento, derechos de las mujeres, aborto seguro.</h6>
+    </div>
+    <div class="ficha">
+      <h3>Interrupción Legal del Embarazo</h3>
+      <h4>Tel: 51 32 09 09 | Ciudad de México</h4>
+      <%= image_tag "ile.png", class: "img_ficha" %>
+      <h5> Servicios de los centros de salud y hospitales certificados de la Secretaría de Salud del Distrito Federal son gratuitos.</h5>
+      <h6>Acompañamiento, derechos de las mujeres, aborto seguro.</h6>
+    </div>
+  </div>
+</div>
