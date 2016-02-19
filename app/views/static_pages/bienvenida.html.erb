@@ -4,43 +4,41 @@
   <h2>"Aquí va la descripción de la plataforma"</h2>
 
   <form>
+    <input type="text" class="form-control" placeholder="Escribe tu nombre (no es indispensable que sea tu nombre real, pero es un dato obligatorio.).">
+    <br>
     <select type="text" class="form-control">
       <option>Selecciona tu género (este campo es obligatorio)</option>
-      <option>Femenino</option>
-      <option>Transgénero</option>
-      <option>Masculino</option>
+      <option>Mujer</option>
+      <option>Mujer Transgénero</option>
+      <option>Hombre</option>
+      <option>Hombre Transgénero</option>
       <option>Otro</option>
     </select>
     <br>
-    <textarea class="form-control" rows="3" placeholder="Escribe tu domicilio"></textarea>
-    <h6>Escribe tu colonia o pueblo, delegación o municipio, ciudad, estado y CP (este campo es obligatorio).</h6>
-    <h6>Si no te sabes tu dirección con tu Código Postal es suficiente.</h6>
+    <textarea class="form-control" rows="3" placeholder="Escribe tu domicilio (este campo es obligatorio)."></textarea>
+    <h4>Colonia o pueblo, delegación o municipio, ciudad y/o estado; o si no te sabes tu dirección escribe tu Código Postal.</h4>
     <br>
-    <h4>Si prefieres que nosotras te busquemos, por favor escribe tus siguientes datos:</h4>
-    <br>
-    <input type="text" class="form-control" placeholder="Nombre">
+    <h2>Si prefieres que nosotras te busquemos, por favor escribe tus siguientes datos:</h2>
     <br>
     <input type="text" class="form-control" placeholder="Número de teléfono">
     <br>
     <input type="text" class="form-control" placeholder="Dirección de correo electrónico">
-    <h6>Tu nombre es necesario, pero para los siguientes datos por lo menos danos uno de los dos.</h6>
   </form>
 
   <br><br>
-    <%= link_to "Relaciones Violentas", relaciones_violentas_path, class: "btn btn-lg btn-success" %>
+    <%= link_to "Relaciones Violentas", relaciones_violentas_path, class: "btn btn-lg btn-success btn_violencia" %>
 
-    <%= link_to "Negligencia Médica", '#', class: "btn btn-lg btn-success" %>
-
-    <%= link_to "Violencia Laboral", '#', class: "btn btn-lg btn-success" %>
-
-    <%= link_to "Violencia Institucional", '#', class: "btn btn-lg btn-success" %>
-
-    <%= link_to "Acoso Callejero", '#', class: "btn btn-lg btn-success" %>
+    <%= link_to "Violencia Laboral", '#', class: "btn btn-lg btn-success btn_violencia" %>
 
     <%= link_to "Bullying", '#', class: "btn btn-lg btn-success btn_violencia" %>
 
+    <%= link_to "Violencia Institucional", '#', class: "btn btn-lg btn-success btn_violencia" %>
+
+    <%= link_to "Acoso Callejero", '#', class: "btn btn-lg btn-success btn_violencia" %>
+
   </div>
 
+<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
 
 <%= link_to image_tag("conectar.jpg", alt: "Conectar logo"),
             'http://previews.123rf.com/images/abluecup/abluecup1209/abluecup120902412/15457488-Conecte-el-cable-de-polvo-a-una-persona-conectar-los-enchufes-Foto-de-archivo.jpg' %>

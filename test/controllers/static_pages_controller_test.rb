@@ -14,12 +14,6 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_select "title", "Relaciones_violentas"
   end
 
-  # test "should get diagnostico" do
-  #   get :diagnostico
-  #   assert_response :success
-  #   assert_select "title", "Diagnostico"
-  # end
-
   test "should get organizaciones" do
     get :organizaciones
     assert_response :success
