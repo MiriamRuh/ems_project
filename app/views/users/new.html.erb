@@ -1,2 +1,59 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<% provide(:title, 'Sign up') %>
+
+<div class="center jumbotron">
+  <h1>Ingresa</h1>
+
+  <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
+  <%= render 'shared/error_messages' %>
+
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input name="authenticity_token" type="hidden"
+         value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
+
+    <label for="user_name"></label>
+    <input id="user_name" name="user[name]" type="text" placeholder="Escribe tu nombre (no es indispensable que sea tu nombre real, pero es un dato obligatorio).">
+    <%= f.text_field :name, class: 'form-control' %>
+     
+    <label for="user_gender"></label>
+    <select id="user_gender" name="user[gender]" type="text">
+      <option>Selecciona tu género (este campo es obligatorio).</option>
+      <option>Mujer</option>
+      <option>Mujer Transgénero</option>
+      <option>Hombre</option>
+      <option>Hombre Transgénero</option>
+      <option>Otro</option>
+    </select>
+    <%= f.gender_field :gender, class: 'form-control' %>
+    
+    <label for="user_address"></label>
+    <textarea id="user_address" name="user[address]" rows="3" placeholder="Escribe tu domicilio. (Colonia o pueblo, delegación o municipio, ciudad y/o estado. Este campo es obligatorio)."></textarea>
+    <%= f.address_field :address, class: 'form-control' %>
+
+    <label for="user_zipcode"></label>
+    <input id="user_zipcode" name="user[zipcode]" type="text" placeholder="o si no te sabes tu dirección escribe aquí tu Código Postal.">
+    <%= f.zipcode_field :zipcode, class: 'form-control' %>
+    
+    <br>
+    <h2>Si prefieres que nosotras te busquemos, por favor escribe tus siguientes datos:</h2>
+    
+    <label for="user_phone"></label>
+    <input id="user_phone" name="user[phone]" type="text" placeholder="Número de teléfono">
+    <%= f.phone_field :phone, class: 'form-control' %>
+    
+    <label for="user_email"></label>
+    <input id="user_email" name="user[email]" type="email" placeholder= "Direcciòn de correo electrónico."/>
+    <%= f.email_field :email, class: 'form-control' %>
+  </form>
+
+  <br><br>
+    <%= link_to "Relaciones Violentas", relaciones_violentas_path, class: "btn btn-lg btn-success btn_violencia" %>
+
+    <%= link_to "Violencia Laboral", '#', class: "btn btn-lg btn-success btn_violencia" %>
+
+    <%= link_to "Bullying", '#', class: "btn btn-lg btn-success btn_violencia" %>
+
+    <%= link_to "Violencia Institucional", '#', class: "btn btn-lg btn-success btn_violencia" %>
+
+    <%= link_to "Acoso Callejero", '#', class: "btn btn-lg btn-success btn_violencia" %>
+
+  </div>

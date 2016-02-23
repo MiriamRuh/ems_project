@@ -11,6 +11,9 @@
   <body>
     <header class="navbar navbar-fixed-top">
       <div class="container">
+        <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
         <%= link_to "EMS_APP", root_path, id: "logo" %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
