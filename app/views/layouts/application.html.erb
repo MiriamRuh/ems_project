@@ -8,18 +8,25 @@
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
   </head>
+  
   <body>
     <header class="navbar navbar-fixed-top">
       <div class="container">
+        <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+        <% end %>
         <%= link_to "EMS_APP", root_path, id: "logo" %>
+        
         <nav>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Informate", informate_path %></li>
-        <li><%= link_to "Todas las Organizaciones",    organizaciones_path %></li>
+            <li><%= link_to "Todas las Organizaciones",    organizaciones_path %></li>
           </ul>
         </nav>
+
       </div>
     </header>
+
     <div class="container">
       <%= yield %>
       <%= render 'layouts/footer' %>

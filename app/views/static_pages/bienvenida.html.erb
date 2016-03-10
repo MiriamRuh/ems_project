@@ -24,8 +24,11 @@
     <br>
     <input type="text" class="form-control" placeholder="Dirección de correo electrónico">
   </form>
-
   <br><br>
+  <%= link_to "Continúa!", signup_path, class: "btn btn-lg btn-primary" %>
+  <br><br><br>
+  <h3>Ahora da click en el botón de abajo que elijas.</h3>
+  <br><br><br>
     <%= link_to "Relaciones Violentas", relaciones_violentas_path, class: "btn btn-lg btn-success btn_violencia" %>
 
     <%= link_to "Violencia Laboral", '#', class: "btn btn-lg btn-success btn_violencia" %>
@@ -38,7 +41,3 @@
 
   </div>
 
-<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-
-<%= link_to image_tag("conectar.jpg", alt: "Conectar logo"),
-            'http://previews.123rf.com/images/abluecup/abluecup1209/abluecup120902412/15457488-Conecte-el-cable-de-polvo-a-una-persona-conectar-los-enchufes-Foto-de-archivo.jpg' %>
