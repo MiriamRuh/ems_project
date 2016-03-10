@@ -4,8 +4,6 @@ Rails.application.routes.draw do
 
   get 'users_organizations/new'
 
-  get 'users/new'
-
   get 'user/new'
 
   get 'relaciones_violentas' => 'static_pages#relaciones_violentas'
