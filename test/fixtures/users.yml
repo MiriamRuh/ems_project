@@ -15,3 +15,8 @@
 #   zipcode: MyString
 #   phone: MyString
 #   email: MyString
+
+miriam:
+  name: Miriam Ruh
+  email: miriamruh@gmail.com
+  password_digest: <%= User.digest('password') %>

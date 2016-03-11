@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160219184707) do
+ActiveRecord::Schema.define(version: 20160224200137) do
 
   create_table "user_organizations", force: :cascade do |t|
     t.string   "category_location"
@@ -31,8 +31,9 @@ ActiveRecord::Schema.define(version: 20160219184707) do
     t.string   "zipcode"
     t.string   "phone"
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "remember_digest"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
